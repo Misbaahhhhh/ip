@@ -1,0 +1,79 @@
+import './table.css'; 
+function MyFuncComp () { 
+return(
+<div>
+<h2>Demo Function Component</h2>
+<h1> To do list </h1>
+<h2>
+<table>
+<tr>
+<th>Activity</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>Project Log Book</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Assignment</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>Submission</td>
+<td>Partial</td>
+</tr>
+</table>
+</h2>
+</div>
+)
+}
+export default MyFuncComp;
+
+Myclass.js
+import React, { Component } from 'react'; 
+import fruitsimage from './fruits.jpeg';
+class MyClass extends Component { 
+togglelist = () => {
+const list = document.getElementById('fruit-list');
+if (list.style.display === 'none' || list.style.display === '') { 
+list.style.display = 'block';
+} else {
+list.style.display = 'none';
+}
+};
+render() { 
+return (
+<div>
+<h2>Demo Class Component</h2>
+<img src={fruitsimage} alt="Fruits" />
+<button onClick={this.togglelist}> 
+Fruit List
+</button>
+<ul id="fruit-list" style={{ display: 'none' }}>
+<li>Apple</li>
+<li>Banana</li>
+<li>Cherry</li>
+<li>Orange</li>
+<li>Pineapple</li>
+</ul>
+</div>
+);
+}
+}
+export default MyClass;
+
+import logo from './logo.svg'; 
+import './App.css';
+import MyFuncComp from './MyFuncComp'; 
+import './table.css'
+import Myclassfrom './Myclass'; 
+function App() {
+return (
+<div className="App">
+<MyFuncComp />
+<Myclass/>
+</div>
+);
+}
+export default App;
+
