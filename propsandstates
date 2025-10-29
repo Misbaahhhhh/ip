@@ -1,0 +1,62 @@
+Props.js
+import React from 'react'
+export default function Props(props){
+return (
+<div>
+<h1>account details are:</h1>
+<h2>account no: {props.account_no} <br></br>
+balance: {props.bal}<br></br>
+branch: {props.branch}<br></br>
+bank name: {props.bname}<br></br>
+loacation: {props.location}<br></br>
+rate of interest: {props.roi}<br></br>
+type of account: {props.type}<br></br>
+</h2>
+</div>
+}
+State.js
+import React, { Component } from "react";
+export class State extends Component {
+constructor() {
+super();
+this.state = {
+count: 0
+};
+}
+updatestate = () => {
+this.setState({
+count: this.state.count + 1
+});
+};
+decrementstate = () => {
+this.setState({
+count: this.state.count - 1
+});
+};
+render() {
+return (
+<div>
+
+<h1>Count: {this.state.count}</h1>
+<button onClick={this.updatestate}>Increment</button>
+<button onClick={this.decrementstate}>Decrement</button>
+</div>
+);
+}
+}
+export default State;
+App.js
+import './App.css';
+import Myclasscomp from './Myclasscomp';
+import Props from './Props' ;
+import State from './State';
+function App() {
+return (
+<div className="App">
+<Props account_no="1024" branch="ghodbunder road" bname="bank of india" loaction="thane" 
+roi="9.1%" type="saving"/>
+<State />
+</div>
+);
+}
+export default App;
