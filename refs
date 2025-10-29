@@ -1,0 +1,28 @@
+import React, { Component } from 'react';
+class Ref extends Component {
+constructor() {
+super();
+this.Ref = React.createRef();
+}
+edit = () => {
+this.Ref.current.style.fontSize = '100px';
+this.Ref.current.style.backgroundColor = 'blue';
+this.Ref.current.style.fontFamily = 'Calibre';
+};
+
+edit2 = () => {
+this.Ref.current.style.display = 'none';
+};
+render() {
+return (
+<div>
+<h1>References</h1>
+<input type='text' ref={this.Ref} />
+<br /><br />
+<button onClick={this.edit}>Change Style</button>
+<button onClick={this.edit2}>Hide Input</button>
+</div>
+);
+}
+}
+export default Ref;
