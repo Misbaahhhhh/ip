@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+<title>Document</title>
+<style>
+#f1
+{
+background-color:lightblue;
+text-align: center;
+}
+</style>
+<script>
+function val()
+{
+let user=document.f1.user.value;
+let pass=document.f1.pass.value;
+let mob=document.f1.mob.value;
+let email=document.f1.email.value;
+if (!/^[A-Za-z]+$/.test(user)) {
+alert("Please enter a valid username with only letters.");
+document.f1.user.focus();
+return false;
+}
+if(pass.length<8){
+alert("Password should be at least 8 characters");
+document.f1.pass.focus();
+return false;
+}
+if(!document.f1.gen.value) {
+alert("Please select your gender");
+return false;
+}
+if(mob.length<10){
+alert("Please enter a valid number");
+document.f1.mob.focus();
+return false;
+}
+if (!email.endsWith("@gmail.com")) {
+alert("Please enter a valid Gmail address ending with @gmail.com");
+document.f1.email.focus();
+return false;
+}
+}
+</script>
+</head>
+<body bgcolor="pink">
+<fieldset id="f1">
+<h2>Registration Form</h2>
+</fieldset>
+<h4>Basic Personal Details</h4>
+<form name="f1" action="#" method="get">
+Username:
+<input type="text" name="user">
+<br> <br>
+Password:
+<input type="password" name="pass">
+<br> <br>
+Gender:
+<br>
+<input type="radio" name="gen" value="male"> Male
+<br>
+<input type="radio" name="gen" value="female"> Female
+<br>
+<input type="radio" name="gen" value="other"> Other
+<br> <br>
+Mobile Number:
+<input type="text" name="mob">
+<br> <br>
+Address:
+<textarea rows="3" cols="10"></textarea>
+<br><br>
+Email:
+<input type="email" name="email">
+<br><br>
+<input type="submit" value="Submit" onclick="return val()">
+</form>
+</body>
+</html>
