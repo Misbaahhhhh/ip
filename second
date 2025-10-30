@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+#f1
+{
+background-color: aquamarine;
+}
+#f2
+{
+background-color: lightblue;
+}
+#f3
+{
+background-color: grey;
+}
+</style>
+</head>
+<body>
+<h1>Placement Registration Form</h1>
+<fieldset id="f1">
+<legend><h4>Basic Personal Details</h4></legend>
+name:
+<input type="text"><br>
+<br>
+email:
+<input type="email"><br>
+<br>
+password:
+<input type="password"><br>
+<br>
+gender:
+<input type="radio" name="gen">Male
+<input type="radio" name="gen">Female
+<input type="radio" name="gen">Other
+<br><br>
+address:
+<textarea rows="3" cols="10"></textarea>
+<br><br>
+mobile number:
+<select>
+<option>+91</option>
+<option>+00</option>
+<option>+09</option>
+<option>+11</option>
+</select>
+<input type="text">
+</fieldset>
+<fieldset id="f2">
+<legend><h4>Academic Details</h4></legend>
+branch:
+<select>
+<option>Comps</option>
+<option>IT</option>
+<option>Mech</option>
+<option>Civil</option>
+</select>
+<br><br>
+year:
+<select>
+<option>FE</option>
+<option>SE</option>
+<option>TE</option>
+<option>BE</option>
+</select>
+<br><br>
+last year cgpa:
+<input type="text"><br>
+<br>
+any certifications:
+<input type="checkbox">computing using python
+<input type="checkbox">cisco
+<input type="checkbox">eduskills cohort<br><br>
+project name:
+<input type="text">
+<br><br>
+internship completed:
+<input type="text">
+<br>
+</fieldset>
+<fieldset id="f3">
+<legend><h4>Uploadation</h4></legend>
+upload photo:
+<input type="file">
+<br><br>
+upload resume:
+<input type="file">
+<br><br>
+upload certificates:
+<input type="file">
+<br><br>
+upload marksheets:
+<input type="file">
+</fieldset> 
+</body>
+</html>
+
