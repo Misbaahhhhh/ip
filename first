@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+background-color: lightblue;
+text-align: center;
+font-size: 18px;
+}
+h1 {
+font-size: 36px;
+font-style: italic;
+color:navy;
+}
+a {
+text-decoration: underline;
+color: navy;
+font-style: italic;
+font-weight: bold;
+}
+</style>
+</head>
+</head>
+<body>
+<center>
+<h1>Misbaah Khan</h1>
+<img src="girll.png">
+<p>
+<a href="details.html">DETAILS</a>
+<br>
+<a href="academics.html">ACADEMICS</a>
+<br>
+<a href="others.html">OTHERS</a>
+</p>
+</center>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body bgcolor="grey">
+<h1>
+<center>
+<img src="girll.png" height="10%" width="10%">
+<h1 style="font-size: 20px;"> Name : Misbaah Khan</h1>
+<h1 style="font-size: 20px;"> Moodle Id : 23104227</h1>
+<h1 style="font-size: 20px;"> Roll No : 08</h1>
+<h1 style="font-size: 20px;"> Email Id : 23104227@apsit.edu.in</h1>
+<h1 style="font-size: 20px;"> Phone no. : 9876543210</h1> 
+<h1 style="font-size: 20px;"> Address : Thane</h1> 
+</center>
+</h1> 
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<center>
+<table border="5px" cellpadding="10px">
+<tr>
+<th> Subject </th>
+<th> Marks </th>
+</tr>
+<tr>
+<td>DSA</td>
+<td>75</td>
+</tr>
+<tr>
+<td>DBMS</td>
+<td>77</td>
+</tr>
+<tr>
+<td>PCPF</td>
+<td>55</td>
+</tr>
+<tr>
+<td>POC</td>
+<td>55</td>
+</tr>
+<tr>
+<td>MATHS</td>
+<td>70</td>
+</tr>
+</center>
+</table>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+<title>Document</title>
+<style>
+h1 {
+font-size: 36px;
+font-style: bold;
+color:navy;
+}
+ul {
+font-style: italic;
+color: red;
+}
+</style>
+</head>
+<body bgcolor="pink">
+<h1> Extra Curricular Activities</h1>
+<ul>
+<li>Cohort11</li>
+<li>Cohort12</li>
+<li>The Joy Of Computing Using Python</li>
+</ul>
+</body>
+</html>
