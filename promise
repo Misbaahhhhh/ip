@@ -1,0 +1,38 @@
+let a = 11;
+
+let pr = new Promise((resolve, reject) => {
+  if (a % 2 === 0) {
+    console.log("It's an even number");
+    resolve("✅ Success: This is the even case");
+  } else {
+    reject("❌ Failed: This is the odd case");
+  }
+});
+
+pr
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+  function fibonacciIterator(max) {
+  let a = 0, b = 1;
+
+  return {
+    next() {
+      if (a > max) return { done: true };
+      const value = a;
+      [a, b] = [b, a + b];  // shorter swap syntax
+      return { value, done: false };
+    }
+  };
+}
+
+const fib = fibonacciIterator(100);
+
+for (let result = fib.next(); !result.done; result = fib.next()) {
+  console.log(result.value);
+}
+     
